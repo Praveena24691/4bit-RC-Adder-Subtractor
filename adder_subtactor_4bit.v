@@ -25,7 +25,6 @@ module adder_subtractor_4bit(
 
     // Logic for 2's complement subtraction
     assign B_xor_M = B ^ {4{M}};
-
     // Hierarchical Instantiation: 
     // We are "plugging in" 4 copies of the full_adder module
     full_adder fa0 (A[0], B_xor_M[0], M,  Sum[0], c0);
